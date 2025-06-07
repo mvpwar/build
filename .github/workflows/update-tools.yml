@@ -10,4 +10,5 @@ jobs:
           armbian_token:     "${{ secrets.GITHUB_TOKEN }}"  # GitHub token
           armbian_release:   "jammy"                        # userspace
           armbian_target:    "kernel"                        # build=image, kernel=kernel
-          armbian_board:     "panther-x2"                   # build target
+          armbian_board:     "panther-x2"   
+          armbian_artifacts: "output/packages-hashed/*"# build target
