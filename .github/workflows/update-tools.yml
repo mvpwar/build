@@ -5,7 +5,7 @@ jobs:
   build-armbian:
     runs-on: ubuntu-24.04-arm # use ubuntu-24.04 when building x86 or riscv64
     steps:
-      - uses: armbian/build@main
+      - uses: mvpwar/build@main
         with:
           armbian_token:     "${{ secrets.GITHUB_TOKEN }}"  # GitHub token
           armbian_release:   "jammy"                        # userspace
