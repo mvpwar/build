@@ -558,14 +558,6 @@
 	status = "okay";
 };
 
-&usb_host0_ohci {
-	status = "okay";
-};
-
-&usb_host1_ehci {
-	status = "okay";
-};
-
 &usb2phy0 {
 	status = "okay";
 };
@@ -575,5 +567,21 @@
 };
 
 &usb2phy0_otg {
+	status = "okay";
+};
+
+&usb_host1_xhci {
+	status = "okay";
+};
+
+&usb2phy1 {
+	status = "okay";
+};
+
+&usb2phy1_host {
+	status = "okay";
+};
+
+&usb2phy1_otg {
 	status = "okay";
 };
